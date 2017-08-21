@@ -20,7 +20,6 @@ rm -rfv \
     usr/bin/lslocks \
     usr/bin/lslogins \
     usr/bin/lsns \
-    usr/bin/mcookie \
     usr/bin/namei \
     usr/bin/pg \
     usr/bin/prlimit \
@@ -76,7 +75,6 @@ rm -rfv \
     usr/share/bash-completion/completions/lslocks \
     usr/share/bash-completion/completions/lslogins \
     usr/share/bash-completion/completions/lsns \
-    usr/share/bash-completion/completions/mcookie \
     usr/share/bash-completion/completions/mkfs \
     usr/share/bash-completion/completions/mkswap \
     usr/share/bash-completion/completions/namei \
