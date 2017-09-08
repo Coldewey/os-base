@@ -2,7 +2,7 @@ FROM rancher/os-ubuntuconsole-base
 # FROM amd64=ubuntu:16.10 arm64=aarch64/ubuntu:16.10 arm=armhf/ubuntu:16.10
 
 RUN apt-get update && \
-    apt-get install -y build-essential wget libncurses5-dev unzip bc curl python rsync ccache vim less cpio texinfo git intltool
+    apt-get install -y build-essential wget libncurses5-dev libisl-dev libisl15 unzip bc curl python rsync ccache vim less cpio texinfo git intltool
 
 RUN locale-gen en_US.UTF-8
 ENV LANG en_US.UTF-8
@@ -13,7 +13,7 @@ ENV SHELL /bin/bash
 ENV ARTIFACTS /usr/src
 WORKDIR ${DAPPER_SOURCE}
 
-ENV VERSION 2017.02.5-1
+ENV VERSION 2017.09.8-1
 ENV TARBALL ${VERSION}.tar.gz
 RUN cd ${ARTIFACTS} && \
     wget https://github.com/Coldewey/buildroot/archive/$TARBALL
