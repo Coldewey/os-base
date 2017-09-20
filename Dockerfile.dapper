@@ -13,10 +13,10 @@ ENV SHELL /bin/bash
 ENV ARTIFACTS /usr/src
 WORKDIR ${DAPPER_SOURCE}
 
-ENV VERSION 2017.09.8-1
+ENV VERSION 2017.09-2
 ENV TARBALL ${VERSION}.tar.gz
 RUN cd ${ARTIFACTS} && \
-    wget https://github.com/Coldewey/buildroot/archive/$TARBALL
+      wget https://github.com/Coldewey/buildroot/archive/$TARBALL
 
 ARG DAPPER_HOST_ARCH=amd64
 ARG HOST_ARCH=${DAPPER_HOST_ARCH}
